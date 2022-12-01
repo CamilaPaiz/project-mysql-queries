@@ -18,21 +18,22 @@ CREATE TABLE SpotifyClone.plano(
   CREATE TABLE SpotifyClone.usuario(
       usuario_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
       usuario_nome VARCHAR(100) NOT NULL,
-      usuario_idade INT NOT NULL
+      usuario_idade INT NOT NULL,
+       FOREIGN KEY (plano_id) REFERENCES plano(plano_id)
   ) engine = InnoDB;
   
-  INSERT INTO SpotifyClone.usuario (usuario_nome, usuario_idade)
+  INSERT INTO SpotifyClone.usuario (usuario_nome, usuario_idade, plano_id)
   VALUES
-  ('Barbara Liskov', 82),
-  ('Robert Cecil Martin', 58),
-  ('Ada Lovelace', 37),
-  ('Martin Fowler', 46),
-  ('Barbara Liskov', 82),
-  ('Robert Cecil Martin', 58),
-  ('Ada Lovelace', 37),
-  ('Martin Fowler', 46),
-  ('Ada Lovelace', 37),
-  ('Martin Fowler', 46);
+  ('Barbara Liskov', 82, 1),
+  ('Robert Cecil Martin', 58, 1),
+  ('Ada Lovelace', 37, 2),
+  ('Martin Fowler', 46, 2),
+  ('Barbara Liskov', 82, 2),
+  ('Robert Cecil Martin', 58, 3),
+  ('Ada Lovelace', 37, 3),
+  ('Martin Fowler', 46, 4),
+  ('Ada Lovelace', 37, 4),
+  ('Martin Fowler', 46, 4);
 
   CREATE TABLE SpotifyClone.assinatura(
       assinatura_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -85,7 +86,7 @@ CREATE TABLE SpotifyClone.plano(
 	('Falso Brilhante', 3),
 	('Vento de Maio', 3),
   ('QVVJFA', 4),
-  ('Somewhere Far Beyo', 5),
+  ('Somewhere Far Beyond', 5),
   ('I Put A Spell On You', 6);
     
      CREATE TABLE SpotifyClone.musica(
@@ -131,7 +132,6 @@ CREATE TABLE SpotifyClone.plano(
   (6,6),
   (1,6),
   (6,7),
-  (NULL,8),
   (3,9),
   (2,10);
     
