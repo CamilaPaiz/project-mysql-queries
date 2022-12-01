@@ -82,14 +82,14 @@ CREATE TABLE SpotifyClone.plano(
   INSERT INTO SpotifyClone.musica (musica_nome, duracao, album_id)
   VALUES
     ('BREAK MY SOUL', 279, 1),
-	  ('VIRGOS GROOVE', 369, 1),
+	  ('VIRGO’S GROOVE', 369, 1),
 	  ('ALIEN SUPERSTAR', 116, 1),
-	  ('Dont Stop Me Now', 203, 2),
+	  ('Don’t Stop Me Now', 203, 2),
 	  ('Under Pressure', 152, 3),
     ('Como Nossos Pais', 105, 4),
     ('O Medo de Amar é o Medo de Ser Livre', 207, 5),
     ('Samba em Paris', 267, 6),
-    ('The Bards Song', 244, 7),
+    ('The Bard’s Song', 244, 7),
     ('Feeling Good', 100, 8);
     
     CREATE TABLE SpotifyClone.seguindo(
