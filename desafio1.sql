@@ -67,7 +67,7 @@ CREATE TABLE SpotifyClone.plano(
 	  ('Hot Space',1982, 2),
 	  ('Falso Brilhante',1998, 3),
 	  ('Vento de Maio',2021, 3),
-    ('QVVJFA',2003, 4),
+    ('QVVJFA?',2003, 4),
     ('Somewhere Far Beyond',2007, 5),
     ('I Put A Spell On You',2012, 6);
     
